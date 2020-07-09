@@ -7,11 +7,11 @@ ol,ul{list-style:none;padding:0;margin:0}
 a{text-decoration:none;color:#16a3b8}
 a:hover{color:#076775}
 #overlay.toggle {
-width: calc(100% - 250px);
+width:100%;
 height: 100%;
 position: fixed;
 background: rgba(0, 0, 0, 0.71);
-z-index: 9999;
+z-index: 999;
 left: 0;
 }
 html[dir="rtl"] #overlay.toggle {
@@ -298,7 +298,7 @@ html[dir="ltr"] .featured.popular .thumbnail,html[dir="rtl"] .featured.popular o
 .featured.popular ol li .box-content .title{font-size:0.8rem;background:transparent;color:#444}
 #toggle-share,.share-link i{width:40px;height:40px;line-height:40px;text-align:center;font-size:1.3rem;border-radius:50%;cursor:pointer;color:#f5f7f9;-webkit-transition:all 0.3s ease-in-out;transition:all 0.7s ease-in-out}
 .share-link i{margin-bottom:0.5rem;background:#444}
-#toggle-share{background:#16a3b8;box-shadow:2px 2px 4px rgba(0,0,0,0.42);position:fixed;bottom:30px;z-index:999}
+#toggle-share{background:#16a3b8;box-shadow:2px 2px 4px rgba(0,0,0,0.42);position:fixed;bottom:30px;z-index:99}
 html[dir="rtl"] #toggle-share{left:50px}
 html[dir="ltr"] #toggle-share{right:50px}
 .share-link{text-align:center;position:fixed;z-index:999;width:50px;max-height:0;bottom:70px;display:flex;flex-flow:column;overflow:hidden;transition:all 0.3s ease-in-out;opacity:0}
