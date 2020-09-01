@@ -1,39 +1,5 @@
-// open menu
-$("#open_menu").on("click", function() {
-    $("#navbar-overlay").addClass("toggle");
-    $("#nav").addClass("toggle"); //.css({ "display": "block" }, 3000);
-});
-
-// close menu
-$("#navbar-close").on("click", function() {
-    $("#navbar-overlay").removeClass("toggle");
-    $("#nav").removeClass("toggle");
-});
-
-
-// open share-link
-$("#open-share").on("click", function() {
-    $("#share-link,#close-share").addClass("toggle");
-});
-
-// close share-link
-$("#close-share").on("click", function() {
-    $("#share-link,#close-share").removeClass("toggle");
-});
-
-
-// toggle mainn-content and aside-site
-$("#sidepar-collapse").on("click", function() {
-    $(".main-content").toggleClass("full");
-    $(".aside-site").toggleClass("collapse");
-});
-
-
-
-
-
-
-
+function MegoMagAddClass(o,n,c){$(o).on("click",function(){$(n).addClass(c)})}function MegoMagRemoveClass(o,n,c){$(o).on("click",function(){$(n).removeClass(c)})}function MegoMagToggleClass(o,n,c){$(o).on("click",function(){$(n).toggleClass(c)})}MegoMagAddClass("#open_menu","#navbar-overlay, #nav","toggle"),MegoMagRemoveClass("#navbar-close","#navbar-overlay, #nav","toggle"),MegoMagAddClass("#open-search","#form-search","toggle"),MegoMagRemoveClass("#close-search","#form-search","toggle"),MegoMagAddClass("#open-share","#share-link,#close-share","toggle"),MegoMagRemoveClass("#close-share","#share-link,#close-share","toggle"),MegoMagToggleClass("#sidepar-collapse",".main-content","full"),MegoMagToggleClass("#sidepar-collapse",".aside-site","collapse");
+$("#font-z").on("click",function(){$(".post-body-content").css({fontSize:"+=1px",lineHeight:"+=2px"})}),$("#font-o").on("click",function(){$(".post-body-content").css({fontSize:"-=1px",lineHeight:"-=1px"})});
 
 
 // fix height grid
