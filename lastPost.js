@@ -35,10 +35,7 @@ function lastPost(e) {
                 thumbnail = d
             } else thumbnail = "https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png"
         }
-        
-var thumbnailSize = thumbnail;
-var thumbnailSizeSrc = thumbnailSize.replace("s72-c", "s1600");
-        
+
         if ("content" in n) {
             var postSummary = n.content.$t;
         } else {
@@ -53,7 +50,7 @@ var thumbnailSizeSrc = thumbnailSize.replace("s72-c", "s1600");
         document.write('<div class="box">');
         if (showPostThumbnail == true) {
             document.write('<a class="thumbnail" href="' + postUrl + '">');
-            document.write('<img class="lazy" src="' + thumbnailSizeSrc + '" alt="' + postTitle + '">');
+            document.write('<img class="lazy" src="' + thumbnail + '" alt="' + postTitle + '">');
             document.write('</a>'); // end thumbnail
         }
         document.write('<div class="box-content">');
