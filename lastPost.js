@@ -35,6 +35,10 @@ function lastPost(e) {
                 thumbnail = d
             } else thumbnail = "https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png"
         }
+        
+var thumbnailSize = thumbnail;
+var res = thumbnailSize.replace("s72-c", "s1600");
+        
         if ("content" in n) {
             var postSummary = n.content.$t;
         } else {
