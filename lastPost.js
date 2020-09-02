@@ -141,11 +141,7 @@ var showTime = true;
 var showPostLabel = true;
 
 
-$(document).ready(function() {
-    $('.thumbnail img').attr('src', function(i, src) {
-        return src.replace('s72-c', 's1600');
-    });
-});
+
 
 
 function getLastPosts(url, label, style) {
@@ -158,3 +154,9 @@ function getLastPosts(url, label, style) {
     document.write('</div>');
     document.write('</div>');
 }
+
+$(document).ready(function() {
+    $('.thumbnail img').attr('data-src', function(i, src) {
+        return src.replace('s72-c', 's1600');
+    });
+});
