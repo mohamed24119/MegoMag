@@ -1,5 +1,20 @@
-function MegoMagAddClass(o,n,c){$(o).on("click",function(){$(n).addClass(c)})}function MegoMagRemoveClass(o,n,c){$(o).on("click",function(){$(n).removeClass(c)})}function MegoMagToggleClass(o,n,c){$(o).on("click",function(){$(n).toggleClass(c)})}
+function MegoMagAddClass(element1,element2,element3){
+   $(element1).on("click",function(){
+      $(element2).addClass(element3);
+   });
+}
 
+function MegoMagRemoveClass(element1,element2,element3){
+   $(element1).on("click",function(){
+      $(element2).removeClass(element3);
+   });
+}
+
+function MegoMagToggleClass(element1,element2,element3){
+   $(element1).on("click",function(){
+      $(element2).toggleClass(element3);
+   });
+}
 
 // fix height grid
 function fixHeight(elem) {
