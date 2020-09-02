@@ -85,7 +85,7 @@ function lastPost(e) {
         document.write('<div class="box">');
         if (showPostThumbnail == true) {
             document.write('<a class="thumbnail" href="' + postUrl + '">');
-            document.write('<img src="' + thumbnail + '" alt="' + postTitle + '">');
+            document.write('<img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '">');
             document.write('</a>'); // end thumbnail
         }
         document.write('<div class="box-content">');
