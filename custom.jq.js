@@ -33,7 +33,7 @@ if ($(window).width() < 767) {
 
 
 $(document).ready(function() {
-    $('.thumbnail img').attr('data-src', function(i, src) {
+    $('.thumbnail img').attr('src', function(i, src) {
         return src.replace('s72-c', 's1600');
     });
 });
