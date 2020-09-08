@@ -2,7 +2,8 @@ function MigoMagLastPost(e) {
 for (var t = 0; t < numposts; t++) {
     var n = e.feed.entry[t];
     var postTitle = n.title.$t;
-    var postRandom = Math.floor(Math.random() * numposts.length);
+    var random = Math.floor(Math.random() * numposts.length);
+    random, numposts(random);
     var postUrl;
     if (t == e.feed.entry.length) break;
     for (var o = 0; o < n.link.length; o++) {
