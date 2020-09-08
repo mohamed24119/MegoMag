@@ -18,10 +18,11 @@ for (var t = 0; t < numposts; t++) {
     if (postTitle.length > 70) {
         postTitle = postTitle.substring(0, 70) + " " + ellipsis;
     }
-    var postTime = n.published.$t; // طھط§ط±ظٹط® ط§ظ„ظ†ط´ط±
+    var postTime = n.published.$t;
     var postTimeFormat = postTime.substring(0, 10);
-    var postAuthor = n.author[0].name.$t; // ط¨ظˆط§ط³ط·ط©
-    var postLabel = n.category[0].term; // ظ‚ط³ظ…
+    var postAuthor = n.author[0].name.$t;
+    var postLabel = n.category[0].term;
+    var postID = n.id.$t;
     var thumbnail;
     try {
         thumbnail = n.media$thumbnail.url
@@ -46,7 +47,7 @@ for (var t = 0; t < numposts; t++) {
     if (postSummary.length > 170) {
         postSummary = postSummary.substring(0, 170) + " " + ellipsis;
     }
-    document.write('<article class="article-posts" id="post-id-">');
+    document.write('<article class="article-posts" id="post-id-'+ postID +'">');
     document.write('<div class="box">');
     if (showPostThumbnail == true) {
         document.write('<a class="thumbnail" href="' + postUrl + '">');
