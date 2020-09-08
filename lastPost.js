@@ -22,7 +22,7 @@ for (var t = 0; t < numposts; t++) {
     var postTimeFormat = postTime.substring(0, 10);
     var postAuthor = n.author[0].name.$t;
     var postLabel = n.category[0].term;
-    var postID = n.id.$t;
+    var postID = n.id.$t.match(/\d+$/)[0];
     var thumbnail;
     try {
         thumbnail = n.media$thumbnail.url
