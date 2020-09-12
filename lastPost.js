@@ -107,9 +107,6 @@ var showTime = true;
 var showPostLabel = true;
 
 
-
-
-
 function getLastPosts(url, label, style) {
 document.write('<div class="featured ' + style + '">');
 document.write('<div class="cat-title">');
