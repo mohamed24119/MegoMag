@@ -107,7 +107,17 @@ var showTime = true;
 var showPostLabel = true;
 
 
-function getLastPosts(url, label, style) {
+function getLastPosts(url, name, style) {
+document.write('<div class="featured ' + style + '">');
+document.write('<div class="cat-title">');
+document.write('<a>' + name + '</a>');
+document.write('</div>');
+document.write('<div class="articles">');
+document.write('<script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script>');
+document.write('</div>');
+document.write('</div>');
+}
+function getLastPostsLabel(url, label, style) {
 document.write('<div class="featured ' + style + '">');
 document.write('<div class="cat-title">');
 document.write('<a href="' + url + '/search/label/' + label + ' ">' + label + '</a>');
