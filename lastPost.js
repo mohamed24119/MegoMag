@@ -127,17 +127,3 @@ document.write('<script src="' + url + '/feeds/posts/default/-/' + label + '?ord
 document.write('</div>');
 document.write('</div>');
 }
-
-
-
-function TotalPosts(json) {
-for (var t = 0; t < 3; t++) {
-document.write(json.feed.openSearch$totalResults.$t);
-  }  
-}
-function getTotalPosts(url){
-document.write('<script src="' + url + '/feeds/posts/default/?alt=json-in-script&callback=TotalPosts"/>');
-}
-function getTotalPostsLabel(url,label){
-document.write('<script src="' + url + '/feeds/posts/default/-/' + label + '?alt=json-in-script&callback=TotalPosts"/>');
-}
