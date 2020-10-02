@@ -58,13 +58,13 @@ for (var t = 0; t < numposts; t++) {
     document.write('<div class="box-content">');
     document.write('<header class="article-header"><h2 class="post-headding"><a class="link" href="' + postUrl + '">');
     document.write(postTitle);
-     document.write('</a></h2></header>'); // end link
+     document.write('</a></h2></header>'); // end header
 
     if (showPostSummary == true) {
         if (postSummary != '') {
-            document.write('<p class="description">');
-            document.write(postSummary);
-            document.write('</p>');
+            document.write('<p class="description">' + postSummary + '</p>');
+            //document.write(postSummary);
+            //document.write('</p>');
         }
     } // end description
 
