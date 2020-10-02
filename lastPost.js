@@ -72,17 +72,18 @@ for (var t = 0; t < numposts; t++) {
         document.write('<footer class="article-footer">');
         document.write('<div class="meta">');
         if (showTime == true) {
+            
             document.write('<time class="time" datetime="' + postTime + '" title="' + postTimeFormat + '">');
             document.write(postTimeFormat);
             document.write('</time>'); // end time
         }
         if (showPostLabel == true) {
-            document.write('<a class="label" href="#">');
+            document.write('<a class="label">');
             document.write(postLabel);
             document.write('</a>');
         }
         if (showPostAuthor == true) {
-            document.write('<a class="Author" href="">');
+            document.write('<a class="Author">');
             document.write('<i class="fas fa-user"></i>' + ' ' + postAuthor);
             document.write("</a>");
         }
