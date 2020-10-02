@@ -50,27 +50,23 @@ for (var t = 0; t < numposts; t++) {
     document.write('<article class="article-posts" id="post-id-'+ postID +'">');
     document.write('<div class="box">');
     if (showPostThumbnail == true) {
-        
-        
-        
         var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"></a>';
-       
         document.write(printThumbnail);
-      
-        /*
-        document.write('<a class="thumbnail" href="' + postUrl + '">');
-        document.write('<img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '">');
-        document.write('</a>'); // end thumbnail
-        */
     }
+    
+    
+    
     document.write('<div class="box-content">');
-    document.write('<header class="article-header">');
-    document.write('<h2 class="post-headding">');
-    document.write('<a class="link" href="' + postUrl + '">');
-    document.write(postTitle);
-    document.write('</a>'); // end link
-    document.write('</h2>'); // end post-headding
-    document.write('</header>'); //end article-header
+    var printHeader = '<header class="article-header"><h2 class="post-headding"><a class="link" href="' + postUrl + '">postTitle</a></h2></header>';
+    document.write(printHeader);
+    
+    // document.write('<header class="article-header">');
+    //document.write('<h2 class="post-headding">');
+   // document.write('<a class="link" href="' + postUrl + '">');
+   // document.write(postTitle);
+    // document.write('</a>'); // end link
+   // document.write('</h2>'); // end post-headding
+   // document.write('</header>'); //end article-header
     if (showPostSummary == true) {
         if (postSummary != '') {
             document.write('<p class="description">');
