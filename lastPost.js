@@ -50,15 +50,18 @@ for (var t = 0; t < numposts; t++) {
     document.write('<article class="article-posts" id="post-id-'+ postID +'">');
     document.write('<div class="box">');
     if (showPostThumbnail == true) {
-        /*
-        var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"></a>';
-        printThumbnail;
-        */
         
+        
+        
+        var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"></a>';
+       
+        document.write(printThumbnail);
+      
+        /*
         document.write('<a class="thumbnail" href="' + postUrl + '">');
         document.write('<img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '">');
         document.write('</a>'); // end thumbnail
-        
+        */
     }
     document.write('<div class="box-content">');
     document.write('<header class="article-header">');
