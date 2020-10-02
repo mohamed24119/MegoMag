@@ -57,7 +57,7 @@ for (var t = 0; t < numposts; t++) {
     
     
     document.write('<div class="box-content">');
-    var printHeader = '<header class="article-header"><h2 class="post-headding"><a class="link" href="' + postUrl + '"> + postTitle + </a></h2></header>';
+    var printHeader = '<header class="article-header"><h2 class="post-headding"><a class="link" href="' + postUrl + '">' + postTitle + '</a></h2></header>';
     document.write(printHeader);
     
     // document.write('<header class="article-header">');
