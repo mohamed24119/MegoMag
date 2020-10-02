@@ -54,13 +54,10 @@ for (var t = 0; t < numposts; t++) {
         document.write(printThumbnail);
     }
     
-    
-    
-    document.write('<div class="box-content">');
 
-    
+    document.write('<div class="box-content">');
     document.write('<header class="article-header"><h2 class="post-headding"><a class="link" href="' + postUrl + '">');
-   document.write(postTitle);
+    document.write(postTitle);
      document.write('</a></h2></header>'); // end link
 
     if (showPostSummary == true) {
