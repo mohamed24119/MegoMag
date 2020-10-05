@@ -98,8 +98,8 @@ function getLastPostsLabel(url, label, style) {
     document.write('</div>');
 }
 
-//checkBlogId(json);
-alert('<script src="https://migomag-pro.mohamed24119.com/feeds/posts/default/?orderby=published&alt=json-in-script&callback=checkBlogId"/></script>');
+  document.write('<script src="https://migomag-pro.mohamed24119.com/feeds/posts/default/?orderby=published&alt=json-in-script&callback=checkBlogId"/></script>');
+
 
 /*} else{
   document.write("نعتذر على هذا الإجراء .. تم تعطيل بعض الإضافة بسبب استخدامك لنسخة من القالب الغير مرخصة .. ");
