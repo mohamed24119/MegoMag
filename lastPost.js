@@ -1,5 +1,6 @@
 function MigoMagLastPost(e) {
     for (var t = 0; t < numposts; t++) {
+        var blogId = e.id.$t.substring(26);
         var n = e.feed.entry[t];
         var postTitle = n.title.$t;
         var postUrl;
@@ -35,7 +36,7 @@ function MigoMagLastPost(e) {
                 thumbnail = d
             } else thumbnail = "https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png"
         }
-        document.write('<article class="article-posts" id="post-id-' + postID + '">');
+        document.write('<article class="article-posts" id="post-id-' + postID + '" data="'+ blogId +'">');
         document.write('<div class="box">');
         if (showPostThumbnail == true) {
             var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
@@ -69,6 +70,7 @@ var showPostThumbnail = true;
 var showTime = true;
 var showPostLabel = true;
 
+//if(blogId === blogCode){
 function getLastPosts(url, name, style) {
     document.write('<div class="featured ' + style + '">');
     document.write('<div class="cat-title">');
@@ -90,3 +92,7 @@ function getLastPostsLabel(url, label, style) {
     document.write('</div>');
     document.write('</div>');
 }
+
+/*} else{
+  document.write("نعتذر على هذا الإجراء .. تم تعطيل بعض الإضافة بسبب استخدامك لنسخة من القالب الغير مرخصة .. ");
+}*/
