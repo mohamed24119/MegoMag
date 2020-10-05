@@ -37,7 +37,7 @@ function MigoMagLastPost(e) {
                 thumbnail = d
             } else thumbnail = "https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png"
         }
-        document.write('<article class="article-posts" id="post-id-' + postID + '" style="w-' + blogId + '">');
+        document.write('<article class="article-posts" id="post-id-' + postID + '">');
         document.write('<div class="box">');
         if (showPostThumbnail == true) {
             var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
