@@ -72,7 +72,7 @@ var showPostLabel = true;
 
 
 
-function getLastPosts(url, name, style) {
+function getLastPosts(name, style) {
     document.write('<div class="featured ' + style + '">');
     document.write('<div class="cat-title">');
     document.write('<a href="' + url + '/search">' + name + '</a>');
