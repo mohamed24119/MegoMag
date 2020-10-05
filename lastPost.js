@@ -1,7 +1,8 @@
 function MigoMagLastPost(e) {
     for (var t = 0; t < numposts; t++) {
-        var blogId = e.id.$t.substring(26);
+       
         var n = e.feed.entry[t];
+         var blogId = n.id.$t.substring(26);
         var postTitle = n.title.$t;
         var postUrl;
         if (t == e.feed.entry.length) break;
