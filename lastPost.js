@@ -94,7 +94,7 @@ function getLastPostsLabel(url, label, style) {
     document.write('</div>');
 }
 
-alert(blogId);
+alert('hello');
 
 /*} else{
   document.write("نعتذر على هذا الإجراء .. تم تعطيل بعض الإضافة بسبب استخدامك لنسخة من القالب الغير مرخصة .. ");
