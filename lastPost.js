@@ -1,7 +1,3 @@
-function checkBlogId(json){
-     var blogId = json.feed.id.$t.substring(26);
-}
-
 function MigoMagLastPost(e) {
     for (var t = 0; t < numposts; t++) {
         var n = e.feed.entry[t];
@@ -75,14 +71,14 @@ var showTime = true;
 var showPostLabel = true;
 
 
-//if(blogId === blogCode){
+
 function getLastPosts(url, name, style) {
     document.write('<div class="featured ' + style + '">');
     document.write('<div class="cat-title">');
     document.write('<a href="' + url + '/search">' + name + '</a>');
     document.write('</div>');
     document.write('<div class="articles">');
-    document.write('<script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script>');
+    document.write('<script src="/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script>');
     document.write('</div>');
     document.write('</div>');
 }
@@ -98,9 +94,4 @@ function getLastPostsLabel(url, label, style) {
     document.write('</div>');
 }
 
-  document.write('<script src="https://migomag-pro.mohamed24119.com/feeds/posts/default/?orderby=published&alt=json-in-script&callback=checkBlogId"/></script>');
 
-
-/*} else{
-  document.write("نعتذر على هذا الإجراء .. تم تعطيل بعض الإضافة بسبب استخدامك لنسخة من القالب الغير مرخصة .. ");
-}*/
