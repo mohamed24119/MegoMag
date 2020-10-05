@@ -2,7 +2,7 @@ function MigoMagLastPost(e) {
     for (var t = 0; t < numposts; t++) {
        
         var n = e.feed.entry[t];
-        var blogId = e.feed.id.$t.substring(26);
+        
         var postTitle = n.title.$t;
         var postUrl;
         if (t == e.feed.entry.length) break;
@@ -70,6 +70,7 @@ var numposts = 5;
 var showPostThumbnail = true;
 var showTime = true;
 var showPostLabel = true;
+var blogId = e.feed.id.$t.substring(26);
 
 //if(blogId === blogCode){
 function getLastPosts(url, name, style) {
@@ -94,7 +95,7 @@ function getLastPostsLabel(url, label, style) {
     document.write('</div>');
 }
 
-alert('hello');
+alert(blogId);
 
 /*} else{
   document.write("نعتذر على هذا الإجراء .. تم تعطيل بعض الإضافة بسبب استخدامك لنسخة من القالب الغير مرخصة .. ");
