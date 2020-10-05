@@ -1,6 +1,6 @@
 function MigoMagLastPost(e) {
     for (var t = 0; t < numposts; t++) {
-       
+       var blogId = json.feed.id.$t.substring(26);
         var n = e.feed.entry[t];
         
         var postTitle = n.title.$t;
@@ -70,7 +70,7 @@ var numposts = 5;
 var showPostThumbnail = true;
 var showTime = true;
 var showPostLabel = true;
-var blogId = e.feed.id.$t.substring(26);
+
 
 //if(blogId === blogCode){
 function getLastPosts(url, name, style) {
