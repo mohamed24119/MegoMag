@@ -39,11 +39,13 @@ function MigoMagLastPost(e) {
         document.write('<article class="article-posts" id="post-id-' + postID + '">');
         document.write('<div class="box">');
         if (showPostThumbnail == true) {
-            var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
-            var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+            
+            
             if(showLazy == true){
+                var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
             document.write(printThumbnailLazy);
             } else{
+                var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
                 document.write(printThumbnail);
             }
         }
