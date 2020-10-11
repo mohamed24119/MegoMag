@@ -42,10 +42,10 @@ function MigoMagLastPost(e) {
             
             
             if(showLazy == true){
-                var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+                var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
             document.write(printThumbnailLazy);
             } else{
-                var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+                var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img loading="lazy" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
                 document.write(printThumbnail);
             }
         }
