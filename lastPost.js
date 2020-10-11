@@ -39,8 +39,13 @@ function MigoMagLastPost(e) {
         document.write('<article class="article-posts" id="post-id-' + postID + '">');
         document.write('<div class="box">');
         if (showPostThumbnail == true) {
-            var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
-            document.write(printThumbnail);
+            var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+            var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+            if(showLazy == true){
+            document.write(printThumbnailLazy);
+            } else{
+                document.write(printThumbnail);
+            }
         }
         document.write('<div class="box-content">');
         document.write('<header class="article-header"><h2 class="post-headding"><a class="link" href="' + postUrl + '">');
@@ -69,6 +74,7 @@ var numposts = 5;
 var showPostThumbnail = true;
 var showTime = true;
 var showPostLabel = true;
+var printThumbnailLazy = true;
 
 
 
