@@ -74,7 +74,7 @@ var numposts = 5;
 var showPostThumbnail = true;
 var showTime = true;
 var showPostLabel = true;
-var printThumbnailLazy = true;
+var showLazy = true;
 
 
 
