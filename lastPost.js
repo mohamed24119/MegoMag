@@ -36,16 +36,16 @@ function MigoMagLastPost(e) {
                 thumbnail = d
             } else thumbnail = "https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png"
         }
-        document.write('<article class="col-lg-4 article-posts" id="post-id-' + postID + '">');
-        document.write('<div class="card">');
+        document.write('<article class="col-lg-4 col-md-6 article-posts" id="post-id-' + postID + '">');
+        document.write('<div class="card h-100">');
         if (showPostThumbnail == true) {
             
             
             if(showLazy == true){
-                var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy card-img-top" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+                var printThumbnailLazy = '<a class="card-thumbnail" href="' + postUrl + '"><img class="lazy card-img-top" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
             document.write(printThumbnailLazy);
             } else{
-                var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img loading="lazy card-img-top" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+                var printThumbnail = '<a class="card-thumbnail" href="' + postUrl + '"><img loading="lazy card-img-top" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
                 document.write(printThumbnail);
             }
         }
@@ -56,12 +56,12 @@ function MigoMagLastPost(e) {
         if ((showTime == true) || (showPostLabel == true)) {
             document.write('<footer class="article-footer"><div class="meta">');
             if (showTime == true) {
-                document.write('<time class="time" datetime="' + postTime + '" title="' + postTimeFormat + '">');
+                document.write('<time class="time text-muted" datetime="' + postTime + '" title="' + postTimeFormat + '">');
                 document.write(postTimeFormat);
                 document.write('</time>'); // end time
             }
             if (showPostLabel == true) {
-                document.write('<a class="label">');
+                document.write('<a class="label text-muted">');
                 document.write(postLabel);
                 document.write('</a>');
             }
