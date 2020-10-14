@@ -91,8 +91,8 @@ function getLastPosts(url, name, style1) {
     document.write('</div>');
 }
 
-function getLastPostsLabel(url, label, style) {
-    document.write('<div class="featured ' + style + '">');
+function getLastPostsLabel(url, label, style1) {
+    document.write('<div class="featured">');
     document.write('<div class="cat-title">');
     document.write('<a href="' + url + '/search/label/' + label + ' ">' + label + '</a>');
     document.write('</div>');
