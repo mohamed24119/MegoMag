@@ -50,7 +50,7 @@ function MigoMagLastPost(e) {
             }
         }
         document.write('<div class="card-body">');
-        document.write('<header class="article-header"><h2 class="post-headding"><a class="link" href="' + postUrl + '">');
+        document.write('<header class="article-header"><h2 class="card-title"><a class="post-title h4" href="' + postUrl + '">');
         document.write(postTitle);
         document.write('</a></h2></header>'); // end header
         if ((showTime == true) || (showPostLabel == true)) {
