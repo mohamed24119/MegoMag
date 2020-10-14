@@ -36,33 +36,32 @@ function MigoMagLastPost(e) {
                 thumbnail = d
             } else thumbnail = "https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png"
         }
-        var style;
-        document.write('<article class="' + style + ' article-posts" id="post-id-' + postID + '">');
-        document.write('<div class="card h-100">');
+        document.write('<article class="article-posts" id="post-id-' + postID + '">');
+        document.write('<div class="box">');
         if (showPostThumbnail == true) {
             
             
             if(showLazy == true){
-                var printThumbnailLazy = '<a class="card-thumbnail" href="' + postUrl + '"><img class="lazy card-img-top" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+                var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
             document.write(printThumbnailLazy);
             } else{
-                var printThumbnail = '<a class="card-thumbnail" href="' + postUrl + '"><img loading="lazy card-img-top" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+                var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img loading="lazy" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
                 document.write(printThumbnail);
             }
         }
-        document.write('<div class="card-body">');
-        document.write('<header class="article-header"><h2 class="card-title"><a class="post-title h4" href="' + postUrl + '">');
+        document.write('<div class="box-content">');
+        document.write('<header class="article-header"><h2 class="post-headding"><a class="link" href="' + postUrl + '">');
         document.write(postTitle);
         document.write('</a></h2></header>'); // end header
         if ((showTime == true) || (showPostLabel == true)) {
             document.write('<footer class="article-footer"><div class="meta">');
             if (showTime == true) {
-                document.write('<time class="time text-muted" datetime="' + postTime + '" title="' + postTimeFormat + '">');
+                document.write('<time class="time" datetime="' + postTime + '" title="' + postTimeFormat + '">');
                 document.write(postTimeFormat);
                 document.write('</time>'); // end time
             }
             if (showPostLabel == true) {
-                document.write('<a class="label text-muted">');
+                document.write('<a class="label">');
                 document.write(postLabel);
                 document.write('</a>');
             }
@@ -82,22 +81,22 @@ var showLazy = true;
 
 
 function getLastPosts(url, name, style) {
-    document.write('<div class="featured">');
+    document.write('<div class="featured ' + style + '">');
     document.write('<div class="cat-title">');
     document.write('<a href="' + url + '/search">' + name + '</a>');
     document.write('</div>');
-    document.write('<div class="row articles">');
+    document.write('<div class="articles">');
     document.write('<script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script>');
     document.write('</div>');
     document.write('</div>');
 }
 
 function getLastPostsLabel(url, label, style) {
-    document.write('<div class="featured">');
+    document.write('<div class="featured ' + style + '">');
     document.write('<div class="cat-title">');
     document.write('<a href="' + url + '/search/label/' + label + ' ">' + label + '</a>');
     document.write('</div>');
-    document.write('<div class="row articles">');
+    document.write('<div class="articles">');
     document.write('<script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&alt=json-in-script&callback=MigoMagLastPost"/></script>');
     document.write('</div>');
     document.write('</div>');
