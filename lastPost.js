@@ -37,19 +37,19 @@ function MigoMagLastPost(e) {
             } else thumbnail = "https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png"
         }
         document.write('<article class="col-lg-4 article-posts" id="post-id-' + postID + '">');
-        document.write('<div class="box">');
+        document.write('<div class="card">');
         if (showPostThumbnail == true) {
             
             
             if(showLazy == true){
-                var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+                var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy card-img-top" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
             document.write(printThumbnailLazy);
             } else{
-                var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img loading="lazy" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+                var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img loading="lazy card-img-top" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
                 document.write(printThumbnail);
             }
         }
-        document.write('<div class="box-content">');
+        document.write('<div class="card-body">');
         document.write('<header class="article-header"><h2 class="post-headding"><a class="link" href="' + postUrl + '">');
         document.write(postTitle);
         document.write('</a></h2></header>'); // end header
