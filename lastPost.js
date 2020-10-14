@@ -36,7 +36,8 @@ function MigoMagLastPost(e) {
                 thumbnail = d
             } else thumbnail = "https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png"
         }
-        document.write('<article class="col-lg-4 col-md-6 article-posts" id="post-id-' + postID + '">');
+        var style;
+        document.write('<article class="' + style + ' article-posts" id="post-id-' + postID + '">');
         document.write('<div class="card h-100">');
         if (showPostThumbnail == true) {
             
