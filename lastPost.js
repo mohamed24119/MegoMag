@@ -1,7 +1,7 @@
 function MigoMagLastPost(e) {
     for (var t = 0; t < numposts; t++) {
+        var blogId = e.feed.id.$t.substring(26);
         var n = e.feed.entry[t];
-        
         var postTitle = n.title.$t;
         var postUrl;
         if (t == e.feed.entry.length) break;
@@ -77,9 +77,12 @@ var showPostLabel = true;
 var showLazy = true;
 
 
-
-function getLastPosts(url, name, style) {
-    document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
+if(blogId === '5696156054658424365'){
+    function getLastPosts(url, name, style) {
+        document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
+    }
+} else{
+document.write('يجب تفعيل القالب');
 }
 
 function getLastPostsLabel(url, label, style) {
