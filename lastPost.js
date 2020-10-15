@@ -104,12 +104,6 @@ function getLastPostsLabel(url, label, style) {
 
 
 function getLastPostsSlide(url, name, style, slidId){
-    document.write('<div class="featured ' + style + '"><div class="cat-title">');
-    //document.write('<div class="cat-title">');
-    document.write('<a href="' + url + '/search">' + name + '</a></div>');
-    //document.write('</div>');
-    document.write('<div class="articles owl-carousel" id="' + slidId + '">');
-    document.write('<script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script>');
-    document.write('</div></div>');
-    //document.write('</div>');
+    document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles owl-carousel" id="' + slidId + '">');
+    document.write('<script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>'); 
 }
