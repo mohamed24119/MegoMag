@@ -108,10 +108,8 @@ function getLastPostsSlide(url,name,style,id){
     document.write('<div class="cat-title">');
     document.write('<a href="' + url + '/search">' + name + '</a>');
     document.write('</div>');
-    document.write('<div class="articles">');
+    document.write('<div class="articles owl-carousel owl-theme" id="'+ id +'">');
     document.write('<script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script>');
     document.write('</div>');
     document.write('</div>');
 }
-
-
