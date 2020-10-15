@@ -88,11 +88,10 @@ function getLastPostsLabel(url, label, style) {
     document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&alt=json-in-script&callback=MigoMagLastPost"/></script></div></div>');
 }
 
-if(blogId === 5696156054658424367){
+
     function getLastPostsSlide(url, name, style, slidId){
         document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles owl-carousel" id="' + slidId + '"><script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
     }
 
-} else{
-alert('يجب تفعيل القالب');
-}
+alert(blogId);
+
