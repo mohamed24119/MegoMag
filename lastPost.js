@@ -81,29 +81,14 @@ var showLazy = true;
 
 
 function getLastPosts(url, name, style) {
-    document.write('<div class="featured ' + style + '">');
-    document.write('<div class="cat-title">');
-    document.write('<a href="' + url + '/search">' + name + '</a>');
-    document.write('</div>');
-    document.write('<div class="articles">');
-    document.write('<script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script>');
-    document.write('</div>');
-    document.write('</div>');
+    document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
 
 function getLastPostsLabel(url, label, style) {
-    document.write('<div class="featured ' + style + '">');
-    document.write('<div class="cat-title">');
-    document.write('<a href="' + url + '/search/label/' + label + ' ">' + label + '</a>');
-    document.write('</div>');
-    document.write('<div class="articles">');
-    document.write('<script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&alt=json-in-script&callback=MigoMagLastPost"/></script>');
-    document.write('</div>');
-    document.write('</div>');
+    document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&alt=json-in-script&callback=MigoMagLastPost"/></script></div></div>');
 }
 
 
 function getLastPostsSlide(url, name, style, slidId){
-    document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles owl-carousel" id="' + slidId + '">');
-    document.write('<script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>'); 
+    document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles owl-carousel" id="' + slidId + '"><script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
