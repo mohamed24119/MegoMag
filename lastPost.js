@@ -41,10 +41,10 @@ for (var t = 0; t < numposts; t++) {
 
 
         if(showLazy == true){
-            var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lozad" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+            var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lozad" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
         document.write(printThumbnailLazy);
         } else{
-            var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img loading="lozad" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+            var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
             document.write(printThumbnail);
         }
     }
@@ -81,11 +81,9 @@ function getLastPosts(url, name, style) {
     document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
 
-
 function getLastPostsLabel(url, label, style) {
 document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&alt=json-in-script&callback=MigoMagLastPost"/></script></div></div>');
 }
-
 
 function getLastPostsSlide(url, name, style, slidId){
     document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles owl-carousel" id="' + slidId + '"><script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
