@@ -42,10 +42,10 @@ function MigoMagLastPost(e) {
             
             
             if(showLazy == true){
-                var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lazy lozad" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+                var printThumbnailLazy = '<a class="thumbnail" href="' + postUrl + '"><img class="lozad" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
             document.write(printThumbnailLazy);
             } else{
-                var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img loading="lazy lozad" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+                var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img loading="lozad" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
                 document.write(printThumbnail);
             }
         }
@@ -67,9 +67,7 @@ function MigoMagLastPost(e) {
             }
             document.write('</div></footer>'); // END meta
         }
-        document.write('</div>'); //end box-content
-        document.write('</div>'); //end box
-        document.write('</article>'); // end article
+        document.write('</div></div></article>');
     }
 }
 var numposts = 5;
