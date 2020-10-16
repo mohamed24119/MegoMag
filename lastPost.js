@@ -85,8 +85,6 @@ function getLastPostsSlide(url, name, style, slidId){
 
 
 function getLastPostsLabelSlide(url, label, style, carouselID) {
-if(activeOwlCarousel == true){
 document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles owl-carousel" id="'+ carouselID +'"><script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&alt=json-in-script&callback=MigoMagLastPost"/></script></div></div>');
-}
 }
 
