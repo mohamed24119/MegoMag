@@ -59,11 +59,6 @@ for (var t = 0; t < numposts; t++) {
             document.write(postTimeFormat);
             document.write('</time>'); // end time
         }
-        if (showPostLabel == true) {
-            document.write('<a class="label">');
-            document.write(postLabel);
-            document.write('</a>');
-        }
         document.write('</div></footer>'); // END meta
     }
     document.write('</div></div></article>');
@@ -72,7 +67,6 @@ for (var t = 0; t < numposts; t++) {
 var numposts = 5;
 var showPostThumbnail = true;
 var showTime = true;
-var showPostLabel = true;
 var showLazy = true;
 
 
