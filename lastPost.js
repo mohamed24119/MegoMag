@@ -80,7 +80,7 @@ document.write('<div class="featured ' + style + '"><div class="cat-title"><a hr
 }
 
 function getLastPostsSlide(url, name, style, slidId){
-    document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles owl-carousel" id="' + slidId + '"><script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
+    document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles main-carousel" id="' + slidId + '"><script src="' + url + '/feeds/posts/default/?orderby=published&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
 
 
