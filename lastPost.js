@@ -90,7 +90,7 @@ function getLastPostsSlide(url, name, style, slidId){
 }
 
 function getLastPostsLabelSlide(url, label, style, slideId) {
-document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles owl-carousel" id="' +  slideId + '"><script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&alt=json-in-script&callback=MigoMagLastPost"/></script></div></div>');
+document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles owl-carousel" id="' + slidId + '"><script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&alt=json-in-script&callback=MigoMagLastPost"/></script></div></div>');
 }
 
 
