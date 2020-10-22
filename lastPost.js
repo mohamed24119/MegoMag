@@ -52,4 +52,4 @@ function getLastPostsLabelSlide(t, s, e, i) {
 var numposts = 5,
 	showPostThumbnail = !0,
 	showTime = !0,
-	showLazy = !0;
+	showLazy = 0;
