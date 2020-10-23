@@ -65,7 +65,7 @@ var showTime = true;
 
 
 function getLastPosts(url, name, style,maxResults) {
-    document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/?orderby=published&max-results='+ maxResults +'alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
+    document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
 
 function getLastPostsLabel(url, label, style) {
