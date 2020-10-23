@@ -58,7 +58,8 @@ for (var t = 0; t < e.feed.entry.length; t++) {
     document.write('</div></div></article>');
 }
 }
-var numposts = 5;
+
+var showPostThumbnail = true;
 var showTime = true;
 
 
