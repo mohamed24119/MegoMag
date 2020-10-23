@@ -38,7 +38,7 @@ for (var t = 0; t < numposts; t++) {
     document.write('<article class="article-posts" id="post-id-' + postID + '">');
     document.write('<div class="box">');
     if (showPostThumbnail == true) {
-            var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+            var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img loading="lazy" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
             document.write(printThumbnail);
     }
 	
