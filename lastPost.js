@@ -1,5 +1,5 @@
 function MigoMagLastPost(e) {
-for (var t = 0; t < numposts; t++) {
+for (var t = 0; t < e.feed.entry.length; t++) {
     var n = e.feed.entry[t];
     var postTitle = n.title.$t;
     var postUrl;
