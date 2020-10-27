@@ -1,4 +1,4 @@
-function MigoMagLastPost(check) {
+function MigoMagCheck(check) {
 var blogId = check.feed.id.$t.substring(26); 
 var blogKeyId =  5696156054658424367;
 var blogKeyTe = "5206156010658424327";
@@ -94,3 +94,6 @@ document.write('<div class="featured ' + style + '"><div class="cat-title"><a hr
 document.write("عفواً ، لقد تم تعطيل هذه الميزة بسبب عدم تفعيل القالب بشكل قانوني");
 }
 
+function MigoMagCheck() {
+document.write('<script src="https://migomag-pro.mohamed24119.com/feeds/posts/default/?orderby=published&max-results=0&alt=json-in-script&callback=MigoMagCheck"></script>');
+}
