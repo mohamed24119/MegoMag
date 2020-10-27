@@ -1,5 +1,5 @@
 function MigoMagLastPost(e) {
-	var blogId = json.feed.id.$t.substring(26); 
+	var blogId = e.feed.id.$t.substring(26); 
 	var blogKeyId =  5696156054658424367;
 	var blogKeyTe = "5206156010658424327";
 	
