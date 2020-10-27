@@ -1,9 +1,9 @@
 function MigoMagLastPost(e) {
 	var blogId = json.feed.id.$t.substring(26); 
 	var blogKeyId =  5696156054658424367;
-	var blogKeyTe = "5209615100546424326";
+	var blogKeyTe = "5206156010658424327";
 	
-	if(blogId == blogKeyId && blogKeyTe === "5209615100546424321"){
+	if(blogId == blogKeyId && blogKeyTe === "5206156010658424327"){
 	
 	for (var t = 0; t < e.feed.entry.length; t++) {
 		var n = e.feed.entry[t];
