@@ -92,6 +92,6 @@ if(blogId == blogKeyId && blogKeyTe === "5206156010658424327"){
 alert("عفواً ، لقد تم تعطيل هذه الميزة بسبب عدم تفعيل القالب بشكل قانوني");
 }
 
-function MigoMagCheck(check) {
+function MigoMagCheck() {
 document.write('<script src="https://migomag-pro.mohamed24119.com/feeds/posts/default/?orderby=published&max-results=0&alt=json-in-script&callback=MigoMagCheck"></script>');
 }
