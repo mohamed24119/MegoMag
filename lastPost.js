@@ -81,18 +81,3 @@ function getLastPostsLabelSlide(url, label, style,maxResults,slidId) {
 document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles main-carousel" id="'+ slidId +'"><script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
 
-/*
-function MigoMagCheck(check) {
-var blogId = check.feed.id.$t.substring(26); 
-var blogKeyId =  5696156054658424367;
-var blogKeyTe = "5206156010658424327";
-if(blogId == blogKeyId && blogKeyTe === "5206156010658424327"){
-	alert('تم المصادقة');
-} else{
-alert("عفواً ، لقد تم تعطيل هذه الميزة بسبب عدم تفعيل القالب بشكل قانوني");
-}
-
-function MigoMagCheck() {
-document.write('<script src="https://migomag-pro.mohamed24119.com/feeds/posts/default/?orderby=published&max-results=0&alt=json-in-script&callback=MigoMagCheck"></script>');
-}
-*/
