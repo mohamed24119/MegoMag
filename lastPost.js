@@ -63,22 +63,26 @@ var showPostThumbnail = true;
 var showTime = true;
 
 
+function check(){
+if(url == '' || url == null){
+  var url = location.origin;
+}
+if(name == '' || name == null){
+  var name = 'أخر المشاركات';
+}
+
+if(style == ''|| style == null){
+   var style = 'not-sidebar grid grid-3';
+}
+
+if(maxResults == ''|| maxResults == null){
+   var maxResults = 6;
+}
+}
 
 function getLastPosts(url, name, style,maxResults) {
-	if(url == '' || url == null){
-	  var url = location.origin;
-	}
-	if(name == '' || name == null){
-	  var name = 'أخر المشاركات';
-	}
+check();
 	
-	if(style == ''|| style == null){
-	   var style = 'not-sidebar grid grid-3';
-	}
-	
-	if(maxResults == ''|| maxResults == null){
-	   var maxResults = 6;
-	}
 	
 document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
