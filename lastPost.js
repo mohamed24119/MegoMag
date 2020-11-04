@@ -82,15 +82,57 @@ function getLastPosts(url, name, style,maxResults) {
 }
 
 function getLastPostsLabel(url, label, style,maxResults) {
+	if(url == '' || url == null){
+	  var url = location.origin;
+	}
+	if(label == '' || label == null){
+	  var name = 'أخر المشاركات';
+	}
+
+	if(style == ''|| style == null){
+	   var style = 'not-sidebar grid grid-3';
+	}
+
+	if(maxResults == ''|| maxResults == null){
+	   var maxResults = 6;
+	}
 document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
 
 function getLastPostsSlide(url, name, style,maxResults, slidId){
+	if(url == '' || url == null){
+	var url = location.origin;
+	}
+	if(name == '' || name == null){
+	  var name = 'أخر المشاركات';
+	}
+
+	if(style == ''|| style == null){
+	   var style = 'not-sidebar grid grid-3';
+	}
+
+	if(maxResults == ''|| maxResults == null){
+	   var maxResults = 6;
+	}
 document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles main-carousel" id="' + slidId + '"><script src="' + url + '/feeds/posts/default/?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
 
 
 function getLastPostsLabelSlide(url, label, style,maxResults,slidId) {
+	if(url == '' || url == null){
+	var url = location.origin;
+	}
+	if(label == '' || label == null){
+	  var label = 'أخر المشاركات';
+	}
+
+	if(style == ''|| style == null){
+	   var style = 'not-sidebar grid grid-3';
+	}
+
+	if(maxResults == ''|| maxResults == null){
+	   var maxResults = 6;
+	}
 document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles main-carousel" id="'+ slidId +'"><script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
 
