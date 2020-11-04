@@ -63,7 +63,7 @@ var showPostThumbnail = true;
 var showTime = true;
 
 
-function check(){
+function check(url, name, style,maxResults){
 if(url == '' || url == null){
   var url = location.origin;
 }
