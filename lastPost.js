@@ -66,9 +66,8 @@ var showTime = true;
 
 function getLastPosts(url, name, style,maxResults) {
 	if(url == '' || url == null){
-	  var url = '<data:blog.homepageUrl/>';
+	  var url = location.origin;
 	}
-	
 	if(name == '' || name == null){
 	  var name = 'أخر المشاركات';
 	}
@@ -77,7 +76,7 @@ function getLastPosts(url, name, style,maxResults) {
 	   var style = 'not-sidebar grid grid-3';
 	}
 	
-	if(maxResults == ''|| style == null){
+	if(maxResults == ''|| maxResults == null){
 	   var maxResults = 6;
 	}
 	
