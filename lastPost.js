@@ -63,7 +63,7 @@ var showPostThumbnail = true;
 var showTime = true;
 
 
-function check(url, name, style,maxResults){
+function getLastPosts(url, name, style,maxResults) {
 if(url == '' || url == null){
   var url = location.origin;
 }
@@ -78,10 +78,6 @@ if(style == ''|| style == null){
 if(maxResults == ''|| maxResults == null){
    var maxResults = 6;
 }
-}
-
-function getLastPosts(url, name, style,maxResults) {
-check();
 	
 	
 document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
