@@ -65,6 +65,18 @@ var showTime = true;
 
 
 function getLastPosts(url, name, style,maxResults) {
+	if(name == '' || name == null){
+	  var name = 'أخر المشاركات';
+	}
+	
+	if(style == ''|| style == null){
+	   var style = 'not-sidebar grid grid-2';
+	}
+	
+	if(maxResults == ''|| style == null){
+	   var maxResults = 5;
+	}
+	
 document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search">' + name + '</a></div><div class="articles"><script src="' + url + '/feeds/posts/default/?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
 
