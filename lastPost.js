@@ -137,12 +137,12 @@ document.write('<div class="featured swiper-container' + style + '"><div class="
 
 
 //
-function getLastPostsLabelSlide22(url, label, maxResults, slidId) {
+function getLastPostsLabelSlide22(url, label, maxResults) {
 	if(url == '' || url == null){
 	var url = location.origin;
 	}
 	if(maxResults == ''|| maxResults == null){
 	   var maxResults = 6;
 	}
-document.write('<div class="featured grid grid-1 swiper-container"><div class="articles swiper-wrapper" id="'+ slidId +'"><script loading="lazy" src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div<div class="swiper-button-next"></div><div class="swiper-scrollbar"></div></div>');
+document.write('<script loading="lazy" src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script>');
 }
