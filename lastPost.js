@@ -144,5 +144,5 @@ function getLastPostsLabelSlide22(url, label, maxResults) {
 	if(maxResults == ''|| maxResults == null){
 	   var maxResults = 6;
 	}
-document.write('<script loading="lazy" src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script>');
+document.write('<script src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script>');
 }
