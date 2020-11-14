@@ -35,7 +35,7 @@ try {
 		thumbnail = d
 	} else thumbnail = "https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png"
 }
-document.write('<article class="article-posts" id="post-id-' + postID + '">');
+document.write('<article class="article-posts swiper-slide" id="post-id-' + postID + '">');
 document.write('<div class="box">');
 if (showPostThumbnail == true) {
 	var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img class="lozad" loading="lazy" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
@@ -132,6 +132,6 @@ function getLastPostsLabelSlide(url, label, style,maxResults,slidId) {
 	if(maxResults == ''|| maxResults == null){
 	   var maxResults = 6;
 	}
-document.write('<div class="featured ' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles main-carousel" id="'+ slidId +'"><script loading="lazy" src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
+document.write('<div class="featured swiper-container' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles swiper-wrapper" id="'+ slidId +'"><script loading="lazy" src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
 }
 
