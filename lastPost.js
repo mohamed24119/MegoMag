@@ -132,6 +132,5 @@ function getLastPostsLabelSlide(url, label, style,maxResults,slidId) {
 	if(maxResults == ''|| maxResults == null){
 	   var maxResults = 6;
 	}
-document.write('<div class="featured swiper-container' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles swiper-wrapper" id="'+ slidId +'"><script loading="lazy" src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div></div>');
+document.write('<div class="featured swiper-container' + style + '"><div class="cat-title"><a href="' + url + '/search/label/' + label + ' ">' + label + '</a></div><div class="articles swiper-wrapper" id="'+ slidId +'"><script loading="lazy" src="' + url + '/feeds/posts/default/-/' + label + '?orderby=published&max-results='+ maxResults +'&alt=json-in-script&callback=MigoMagLastPost"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div<div class="swiper-button-next"></div><div class="swiper-scrollbar"></div></div>');
 }
-
