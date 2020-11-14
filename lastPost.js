@@ -38,14 +38,8 @@ try {
 document.write('<article class="article-posts" id="post-id-' + postID + '">');
 document.write('<div class="box">');
 if (showPostThumbnail == true) {
-	if(showLozad == true){
-		var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img class="lozad" loading="lazy" data-src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
-		document.write(printThumbnail);
-	} else {
-		var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img class="lozad" loading="lazy" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
-		document.write(printThumbnail);
-	}
-	
+	var printThumbnail = '<a class="thumbnail" href="' + postUrl + '"><img class="lozad" loading="lazy" src="' + thumbnail + '" alt="' + postTitle + '"/></a>';
+	document.write(printThumbnail);
 }
 
 document.write('<div class="box-content">');
