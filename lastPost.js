@@ -67,8 +67,6 @@ document.write('</div></div></article>');
 
 var showPostThumbnail = true;
 var showTime = true;
-var showLozad = true;
-
 
 function getLastPosts(url, name, style,maxResults) {
 	if(url == '' || url == null){
