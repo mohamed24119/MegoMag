@@ -25,7 +25,7 @@ function lastPosts(json) {
         }
 
         var fixThumbnail = thumbnail.replace("s72-c", "s1600");
-		var printElements = '<article class="card"><a class="thumbnail" href="#"><img src="'+ fixThumbnail +'" alt=""></a><div class="card-body"><h2><a href="#"></a></h2></div></article>';
+		var printElements = '<article class="card article-posts"><a class="thumbnail" href="#"><img class="card-img-top" src="'+ fixThumbnail +'" alt=""></a><div class="card-body"><h2><a href="#"></a></h2></div></article>';
         document.write('<div class="swiper-slide">'+ printElements +'</div>');
 	}
 
