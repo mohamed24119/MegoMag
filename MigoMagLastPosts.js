@@ -52,5 +52,5 @@ function getLastPostsSlide(url,max,slideId){
     }
     if(slideId == null || slideId == ''){
     }
-	document.write('<div class="featured grid"><div class="swiper-container" id="'+ slideId +'"><div class="articles swiper-wrapper"><script src="'+ url +'/feeds/posts/default?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>');
+	document.write('<div class="featured grid"><div class="swiper-container"><div class="articles swiper-wrapper"><script src="'+ url +'/feeds/posts/default?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>');
 }
