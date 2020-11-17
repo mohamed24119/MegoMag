@@ -43,7 +43,7 @@ function getLastPosts(url,style,max){
 	document.write('<div class="featured ' +style +'"><div class="articles"><script src="'+ url +'/feeds/posts/default?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div></div>');
 } // end function getLastPosts
 
-function getLastPostsSlide(url,style,max){
+function getLastPostsSlide(url,style,slideId,max){
 	if(url == null || url == ''){
 		var url = 'https://www.mohamed24119.com';
 	}
@@ -51,5 +51,5 @@ function getLastPostsSlide(url,style,max){
 	if(max == null || max == ''){
 		var max = 5;
 	}
-	document.write('<div class="featured '+ style +'"><div class="swiper-container"><div class="articles swiper-wrapper"><script src="'+ url +'/feeds/posts/default?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>');
+	document.write('<div class="featured '+ style +'" id="'+ slideId +'"><div class="swiper-container"><div class="articles swiper-wrapper"><script src="'+ url +'/feeds/posts/default?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>');
 } // end function getLastPostsSlide
