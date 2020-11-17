@@ -31,7 +31,7 @@ function lastPosts(json) {
 
 }
 
-function getLastPosts(url,max){
+function getLastPosts(url,max,style){
     if(url == null || url == ''){
         var url = 'https://www.mohamed24119.com';
     }
@@ -39,7 +39,7 @@ function getLastPosts(url,max){
     if(max == null || max == ''){
         var max = 5;
     }
-	document.write('<div class="featured"><div class="articles"><script src="'+ url +'/feeds/posts/default?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div></div>');
+	document.write('<div class="featured + style + "><div class="articles"><script src="'+ url +'/feeds/posts/default?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div></div>');
 }
 
 function getLastPostsSlide(url,max,slideId){
