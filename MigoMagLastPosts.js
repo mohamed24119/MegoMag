@@ -26,7 +26,7 @@ function lastPosts(json) {
 		}
 
 		var fixThumbnail = thumbnail.replace("s72-c", "s1600");
-		var printElements = '<div class="box"><a class="thumbnail" href="'+ postUrl +'"><img loading="lazy" class="swiper-lazy lazyload lazy" data-src="'+ fixThumbnail +'" alt="'+ postTitle +'"></a><div class="box-content"><h2 class="post-headding"><a class="link" href="'+ postUrl +'">'+ postTitle +'</a></h2></div></div>';
+		var printElements = '<div class="box"><a class="thumbnail" href="'+ postUrl +'"><img loading="lazy" class="swiper-lazy lazy" data-src="'+ fixThumbnail +'" alt="'+ postTitle +'"></a><div class="box-content"><h2 class="post-headding"><a class="link" href="'+ postUrl +'">'+ postTitle +'</a></h2></div></div>';
 		document.write('<article class="article-posts swiper-slide">'+ printElements +'</article>');
 	} // end for loop entry[i]
 
