@@ -32,33 +32,33 @@ function lastPosts(json) {
 } // function lastPosts
 
 function getLastPosts(url,catName,style,max){
-	if(url == null || url == ''){var url = 'https://www.mohamed24119.com';}
+	if(url == null || url == ''){ var url = location.origin;}
 	if(max == null || max == ''){var max = 5;}
 	if(catName == null || catName == ''){var catName = 'أخر المشاركات';}
-	document.write('<div class="card featured ' +style +'"><div class="card-header cat-title"><span class="cat-text">'+ catName +'</span></div><div class="articles"><script src="'+ url +'/feeds/posts/default?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div></div>');
+	document.write('<div class="featured ' +style +'"><div class="cat-title"><span class="cat-text">'+ catName +'</span></div><div class="articles"><script src="'+ url +'/feeds/posts/default?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div></div>');
 }
 
 function getLastPostsSlide(url,style,slideId,max){
-	if(url == null || url == ''){var url = 'https://www.mohamed24119.com';}
+	if(url == null || url == ''){ var url = location.origin;}
 	if(max == null || max == ''){var max = 5;}
 	if(slideId == null || slideId == ''){}
 	if(catName == null || catName == ''){var catName = 'أخر المشاركات';}
-	document.write('<div class="card featured '+ style +'"><div class="card-header cat-title"><span class="cat-text">'+ catName +'</span></div><div class="swiper-container" id="'+ slideId +'"><div class="articles swiper-wrapper"><script src="'+ url +'/feeds/posts/default/?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>');
+	document.write('<div class="featured '+ style +'"><div class="cat-title"><span class="cat-text">'+ catName +'</span></div><div class="swiper-container" id="'+ slideId +'"><div class="articles swiper-wrapper"><script src="'+ url +'/feeds/posts/default/?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>');
 }
 
 function getLastPostsLabel(url,label,style,max){
-	if(url == null || url == ''){var url = 'https://www.mohamed24119.com';}
+	if(url == null || url == ''){ var url = location.origin;}
 	if(max == null || max == ''){var max = 5;}
 	if(label == null || label == ''){}
-	document.write('<div class="card featured ' +style +'"><div class="card-header cat-title"><span class="cat-text">'+ label +'</span></div><div class="articles"><script src="'+ url +'/feeds/posts/default/-/'+ label +'?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div></div>');
+	document.write('<div class="featured ' +style +'"><div class="cat-title"><span class="cat-text">'+ label +'</span></div><div class="articles"><script src="'+ url +'/feeds/posts/default/-/'+ label +'?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div></div>');
 }
 
 
 
 function getLastPostsLabelSlide(url,label,style,slideId,max){
-	if(url == null || url == ''){var url = 'https://www.mohamed24119.com';}
+	if(url == null || url == ''){ var url = location.origin;}
 	if(max == null || max == ''){var max = 5;}
 	if(slideId == null || slideId == ''){}
 	if(label == null || label == ''){}
-	document.write('<div class="card featured '+ style +'"><div class="card-header cat-title"><span class="cat-text">'+ label +'</span></div><div class="swiper-container" id="'+ slideId +'"><div class="articles swiper-wrapper"><script src="'+ url +'/feeds/posts/default/-/'+ label +'?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>');
+	document.write('<div class="featured '+ style +'"><div class="cat-title"><span class="cat-text">'+ label +'</span></div><div class="swiper-container" id="'+ slideId +'"><div class="articles swiper-wrapper"><script src="'+ url +'/feeds/posts/default/-/'+ label +'?alt=json-in-script&max-results='+ max +'&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>');
 }
