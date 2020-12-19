@@ -31,7 +31,7 @@ for (i = 0; i < json.feed.entry.length; i++){
 
 
 
-	var printElements = '<div class="box"><a class="thumbnail" href="'+ postUrl +'"><img loading="lazy" class="swiper-lazy lazy" data-src="'+ fixThumbnail +'" alt="'+ postTitle +'"></a><div class="box-content"><small class="articles-meta text-muted"><span class="meta-item articles-published"><i class="icon far fa-clock"></i><time class="time" datetime="'+ postTime +'" title="'+ postTimeFormat +'">'+ postTimeFormat +'</time></span></small><h2 class="post-headding"><a class="link" href="'+ postUrl +'">'+ postTitle +'</a></h2></div></div>';
+	var printElements = '<div class="box"><a class="thumbnail" href="'+ postUrl +'"><img loading="lazy" class="swiper-lazy lazy" data-src="'+ fixThumbnail +'" alt="'+ postTitle +'"></a><div class="box-content"><small class="articles-meta text-muted"><span class="meta-item articles-published"><i class="icon far fa-clock"></i><time class="time" datetime="'+ postTime +'" title="'+ postTimeFormat +'">'+ postTimeFormat +'</time></span></small><h2 class="post-headding"><a class="link" href="'+ postUrl +'"><span class="post-title">'+ postTitle +'</span></a></h2></div></div>';
 	document.write('<article class="article-posts swiper-slide">'+ printElements +'</article>');
 } // end for loop entry[i]
 
