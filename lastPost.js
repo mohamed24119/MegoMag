@@ -44,24 +44,15 @@ if (showPostThumbnail == true) {
 }
 
 document.write('<div class="box-content">');
-document.write('<header class="article-header"><h2 class="post-headding"><a class="link" href="' + postUrl + '">');
+document.write('<h2 class="post-headding"><a class="link" href="' + postUrl + '">');
 document.write(postTitle);
-document.write('</a></h2></header>'); // end header
-if ((showTime == true) || (showPostLabel == true)) {
-	document.write('<footer class="article-footer"><div class="meta">');
-	if (showTime == true) {
-		document.write('<time class="time" datetime="' + postTime + '" title="' + postTimeFormat + '">');
-		document.write(postTimeFormat);
-		document.write('</time>'); // end time
-	}
-	document.write('</div></footer>'); // END meta
-}
+document.write('</a></h2>'); // end header
 document.write('</div></div></article>');
 }
 }
 
 var showPostThumbnail = true;
-var showTime = true;
+
 
 function getLastPosts(url, name, style,maxResults) {
 	if(url == '' || url == null){
