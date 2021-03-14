@@ -4,7 +4,7 @@ function lastPosts(t) {
     for(j = 0; j < l.link.length && "alternate" != l.link[j].rel; j++);
     var e, r = l.link[j].href,
         n = l.title.$t;
-    var = randomPostsLabelFirst = l.category[0].term;
+    var  PostsLabelFirst = l.category[0].term;
     try {
       e = l.media$thumbnail.url
     } catch(o) {
@@ -14,7 +14,7 @@ function lastPosts(t) {
         p = l.published.$t,
         f = p.substring(0, 10),
         u = '<div class="box"><a class="thumbnail" href="' + r + '"><img loading="lazy" class="swiper-lazy lazy" data-src="' + v + '" alt="' + n + '"></a><div class="box-content"><small class="articles-meta text-muted"><span class="meta-item articles-published"><i class="icon far fa-clock"></i><time class="time" datetime="' + p + '" title="' + f + '">' + f + '</time></span></small><h2 class="post-headding"><a class="link" href="' + r + '"><span class="post-title">' + n + "</span></a></h2></div></div>";
-    document.write('<article class="article-posts article-label-'+ randomPostsLabelFirst +' swiper-slide">' + u + "</article>")
+    document.write('<article class="article-posts article-label-'+ PostsLabelFirst +' swiper-slide">' + u + "</article>")
   }
 }
 
