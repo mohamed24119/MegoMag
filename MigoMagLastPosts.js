@@ -22,24 +22,24 @@ function getLastPosts(s, t, i, a) {
   if(null == s || "" == s) var s = location.origin;
   if(null == a || "" == a) var a = 5;
   if(null == t || "" == t) var t = "أخر المشاركات";
-  document.write('<div class="block ' + i + '"><div class="block-title"><a class="block-text" href="' + s + '/search/">' + t + '</a></div><div class="articles"><script src="' + s + "/feeds/posts/default?alt=json-in-script&max-results=" + a + '&callback=lastPosts"></script></div></div>')
+  document.write('<div class="block ' + i + '"><div class="block-title"><a class="block-group" href="' + s + '/search/">' + t + '</a></div><div class="articles"><script src="' + s + "/feeds/posts/default?alt=json-in-script&max-results=" + a + '&callback=lastPosts"></script></div></div>')
 }
 
 function getLastPostsSlide(s, t, i, a) {
   if(null == s || "" == s) var s = location.origin;
   if(null == a || "" == a) var a = 5;
   if(null == l || "" == l) var l = "أخر المشاركات";
-  document.write('<div class="block ' + t + '"><div class="block-title"><a class="block-text" href="' + s + '/search/">' + l + '</a></div><div class="swiper-container" id="' + i + '"><div class="articles swiper-wrapper"><script src="' + s + "/feeds/posts/default/?alt=json-in-script&max-results=" + a + '&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>')
+  document.write('<div class="block ' + t + '"><div class="block-title"><a class="block-group" href="' + s + '/search/">' + l + '</a></div><div class="swiper-container" id="' + i + '"><div class="articles swiper-wrapper"><script src="' + s + "/feeds/posts/default/?alt=json-in-script&max-results=" + a + '&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>')
 }
 
 function getLastPostsLabel(s, t, i, a) {
   if(null == s || "" == s) var s = location.origin;
   if(null == a || "" == a) var a = 5;
-  document.write('<div class="block ' + i + '"><div class="block-title"><a class="block-text" href="' + s + "/search/label/" + t + '">' + t + '</a></div><div class="articles"><script src="' + s + "/feeds/posts/default/-/" + t + "?alt=json-in-script&max-results=" + a + '&callback=lastPosts"></script></div></div>')
+  document.write('<div class="block ' + i + '"><div class="block-title"><a class="block-group" href="' + s + "/search/label/" + t + '">' + t + '</a></div><div class="articles"><script src="' + s + "/feeds/posts/default/-/" + t + "?alt=json-in-script&max-results=" + a + '&callback=lastPosts"></script></div></div>')
 }
 
 function getLastPostsLabelSlide(s, t, i, a, l) {
   if(null == s || "" == s) var s = location.origin;
   if(null == l || "" == l) var l = 5;
-  document.write('<div class="block ' + i + '"><div class="block-title"><a class="block-text" href="' + s + "/search/label/" + t + '">' + t + '</a></div><div class="swiper-container" id="' + a + '"><div class="articles swiper-wrapper"><script src="' + s + "/feeds/posts/default/-/" + t + "?alt=json-in-script&max-results=" + l + '&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>')
+  document.write('<div class="block ' + i + '"><div class="block-title"><a class="block-group" href="' + s + "/search/label/" + t + '">' + t + '</a></div><div class="swiper-container" id="' + a + '"><div class="articles swiper-wrapper"><script src="' + s + "/feeds/posts/default/-/" + t + "?alt=json-in-script&max-results=" + l + '&callback=lastPosts"></script></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>')
 }
