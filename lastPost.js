@@ -1,3 +1,4 @@
+var  defaultImage = '';
 function MigoMagLastPost(e) {
 for (var t = 0; t < e.feed.entry.length; t++) {
 var n = e.feed.entry[t];
@@ -33,7 +34,7 @@ try {
 	d = s.substr(b + 5, c - b - 5);
 	if (a != -1 && b != -1 && c != -1 && d != "") {
 		thumbnail = d
-	} else thumbnail = "https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png"
+	} else thumbnail = defaultImage
 }
 document.write('<article class="article-posts swiper-slide" id="post-id-' + postID + '">');
 document.write('<div class="box">');
