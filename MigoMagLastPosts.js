@@ -13,7 +13,7 @@ function lastPosts(t) {
     var v = e.replace("s72-c", "s1600"),
         p = l.published.$t,
         f = p.substring(0, 10),
-        u = '<div class="box"><time class="meta-label" datetime="' + p + '" title="' + f + '"><span class="meta-icon far fa-clock"></span>'+ f +'</time><a class="thumbnail" href="' + r + '"><img loading="lazy" class="swiper-lazy lazy" data-src="' + v + '" alt="' + n + '"></a><div class="box-content"><h2 class="post-headding"><a class="link" href="' + r + '"><span class="post-title">' + n + "</span></a></h2></div></div>";
+        u = '<div class="box"><time class="meta-label" datetime="' + p + '" title="' + f + '"><span class="meta-icon far fa-clock"></span>'+ f +'</time><a class="thumbnail" href="' + r + '"><img loading="lazy" class="swiper-lazy lazy" data-src="' + v + '" alt="' + n + '"></a><div class="box-content"><h2 class="post-headding"><a class="link" href="' + r + '">' + n + "</a></h2></div></div>";
     document.write('<article class="article-posts article-label-'+ PostsLabelFirst +' swiper-slide">' + u + "</article>")
   }
 }
